@@ -19,7 +19,7 @@
                 x-show="!showRecoveryCodes"
                 icon="eye"
                 icon:variant="outline"
-                variant="primary"
+                class="!bg-[#D6A34E] !text-[#0A0B0F] hover:!bg-[#E6B868] !border-none font-semibold shadow-[0_0_0_1px_rgba(214,163,78,0.15)]"
                 @click="showRecoveryCodes = true;"
                 aria-expanded="false"
                 aria-controls="recovery-codes-section"
@@ -31,7 +31,7 @@
                 x-show="showRecoveryCodes"
                 icon="eye-slash"
                 icon:variant="outline"
-                variant="primary"
+                class="!bg-[#D6A34E] !text-[#0A0B0F] hover:!bg-[#E6B868] !border-none font-semibold shadow-[0_0_0_1px_rgba(214,163,78,0.15)]"
                 @click="showRecoveryCodes = false"
                 aria-expanded="true"
                 aria-controls="recovery-codes-section"
@@ -43,7 +43,6 @@
                 <flux:button
                     x-show="showRecoveryCodes"
                     icon="arrow-path"
-                    variant="filled"
                     wire:click="regenerateRecoveryCodes"
                 >
                     {{ __('Regenerate codes') }}

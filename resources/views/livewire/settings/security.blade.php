@@ -33,7 +33,7 @@
             />
 
             <div class="flex items-center gap-4">
-                <flux:button variant="primary" type="submit" data-test="update-password-button">{{ __('Save') }}</flux:button>
+                <flux:button type="submit" class="!bg-[#D6A34E] !text-[#0A0B0F] hover:!bg-[#E6B868] !border-none font-semibold shadow-[0_0_0_1px_rgba(214,163,78,0.15)]" data-test="update-password-button">{{ __('Save') }}</flux:button>
             </div>
         </form>
 
@@ -67,7 +67,7 @@
                             </flux:text>
 
                             <flux:button
-                                variant="primary"
+                                class="!bg-[#D6A34E] !text-[#0A0B0F] hover:!bg-[#E6B868] !border-none font-semibold shadow-[0_0_0_1px_rgba(214,163,78,0.15)]"
                                 wire:click="enable"
                             >
                                 {{ __('Enable 2FA') }}
@@ -138,8 +138,7 @@
                                 </flux:button>
 
                                 <flux:button
-                                    variant="primary"
-                                    class="flex-1"
+                                    class="flex-1 !bg-[#D6A34E] !text-[#0A0B0F] hover:!bg-[#E6B868] !border-none font-semibold shadow-[0_0_0_1px_rgba(214,163,78,0.15)]"
                                     wire:click="confirmTwoFactor"
                                     x-bind:disabled="$wire.code.length < 6"
                                 >
@@ -174,8 +173,7 @@
                         <div>
                             <flux:button
                                 :disabled="$errors->has('setupData')"
-                                variant="primary"
-                                class="w-full"
+                                class="w-full !bg-[#D6A34E] !text-[#0A0B0F] hover:!bg-[#E6B868] !border-none font-semibold shadow-[0_0_0_1px_rgba(214,163,78,0.15)]"
                                 wire:click="showVerificationIfNecessary"
                             >
                                 {{ $this->modalConfig['buttonText'] }}
