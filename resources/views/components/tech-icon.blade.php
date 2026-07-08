@@ -123,7 +123,7 @@
         $path = $clean . '/' . $clean . '-original.svg';
     }
     
-    $url = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/" . $path;
+    $url = "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/" . $path;
 @endphp
 
 <img 
